@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    user-select: none;
+}
+
+body, input, button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+}
