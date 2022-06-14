@@ -23,6 +23,8 @@ export default function Home() {
   }, []);
 
   function handleAddUser() {
+    if (userNameValue == '') return;
+
     const newUser = {
       name: userNameValue,
       time: new Date().toLocaleTimeString('pt-br', {
@@ -35,8 +37,6 @@ export default function Home() {
     // capiturando todos os dados cadastrados anteriormente e adicionando os novos ao mesmo array sem sobreescrever uns aos outros.
     setUsers(prevState => [...prevState, newUser]);
   }
-
-  console.log('users:', users);
 
   return (
     <div className="container">
